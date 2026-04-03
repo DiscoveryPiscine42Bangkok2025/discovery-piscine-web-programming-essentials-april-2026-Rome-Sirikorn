@@ -1,2 +1,0 @@
-print "ls | paste -sd\",\"\n" > midLS
-cat midLS
