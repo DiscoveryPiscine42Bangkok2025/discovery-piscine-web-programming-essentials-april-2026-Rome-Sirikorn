@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>SNCF Sandwich Menu</title>
+<style>
+body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.menu {
+    position: relative;
+    width: 260px;
+}
+
+/* Button */
+.menu-button {
+    background: #003366;
+    color: white;
+    padding: 14px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: background 0.3s;
+}
+
+.menu-button:hover {
+    background: #0055aa;
+}
+
+/* Dropdown */
+.dropdown {
+    position: absolute;
+    top: 55px;
+    width: 100%;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease;
+}
+
+/* Reveal on hover */
+.menu:hover .dropdown {
+    max-height: 300px;
+}
+
+/* Items */
+.item {
+    padding: 12px 16px;
+    border-bottom: 1px solid #eee;
+    transition: background 0.2s;
+}
+
+.item:last-child {
+    border-bottom: none;
+}
+
+.item:hover {
+    background: #f0f8ff;
+}
+
+/* Highlight sandwich */
+.highlight {
+    font-weight: bold;
+    color: #cc5500;
+}
+</style>
+</head>
+
+<body>
+
+<div class="menu">
+    <div class="menu-button">🥪 SNCF Sandwich Menu</div>
+
+    <div class="dropdown">
+        <div class="item highlight">Jambon-Beurre ("Drop-down menu")</div>
+        <div class="item">Poulet Crudités</div>
+        <div class="item">Fromage & Cornichons</div>
+        <div class="item">Thon Mayonnaise</div>
+        <div class="item">Œuf & Roquette</div>
+    </div>
+</div>
+
+</body>
+</html>
+
