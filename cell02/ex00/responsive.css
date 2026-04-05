@@ -1,0 +1,20 @@
+/* จัดให้หน้าเว็บไม่มีขอบขาวรอบๆ เพื่อให้ตารางคลุมพื้นที่ทั้งหมด */
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+table {
+  /* หัวใจของ Responsive: ใช้ 100% ทั้งกว้างและสูง */
+  width: 100%;
+  height: 100%;
+  border-collapse: collapse; /* ให้เส้นขอบตารางชิดกัน */
+}
+
+td {
+  border: 1px solid #000000;
+  text-align: center;
+  font-size: 2vw; /* ขนาดตัวอักษรจะใหญ่ขึ้น-เล็กลงตามขนาดจอด้วย */
+}
