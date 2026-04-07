@@ -1,0 +1,39 @@
+body {
+    background-color: #111;
+    color: white;
+    padding-top: 70px;
+}
+
+.bg-orange {
+    background-color: #ff6a00;
+}
+
+.header {
+    background: linear-gradient(135deg, #ff6a00, #ff9a00);
+    padding: 100px 20px;
+}
+
+.profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+/* Card */
+.card {
+    background-color: #222;
+    color: white;
+    margin-top: 20px;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Hover เท่ๆ */
+.card:hover {
+    transform: scale(1.05);
+    transition: 0.3s;
+}
